@@ -1,0 +1,94 @@
+.basket {
+  position: sticky;
+  top: 0;
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 15px;
+
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.basket__title {
+  position: relative;
+  margin-bottom: 32px;
+  padding: 24px 0;
+  padding-left: 108px;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 91px;
+    height: 63px;
+
+    background: url("../img/basket.png") no-repeat 0 0;
+  }
+}
+
+.basket__list {
+  .list-reset();
+}
+
+.basket__item {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 20px;
+
+  &--empty {
+    text-align: center;
+  }
+}
+
+.basket__button-remove {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  vertical-align: top;
+
+  margin-right: 7px;
+
+  &:hover .basket__button-icon,
+  &:focus .basket__button-icon {
+    fill: red;
+  }
+
+  &:active .basket__button-icon {
+    fill: darkred;
+  }
+}
+
+.basket__button-icon {
+  width: 11px;
+  height: 11px;
+  fill: grey;
+
+  cursor: pointer;
+}
+
+.basket__offer-title {
+  display: inline-block;
+  width: 105px;
+}
+
+.basket__offer-price,
+.basket__value {
+  font-weight: bold;
+}
+
+.basket__total {
+  text-align: right;
+}
+
+.basket__button {
+  .button(@green, 18px, #00ab1d);
+}
