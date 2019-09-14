@@ -41,8 +41,8 @@
                 ТВ-тюнера. Записывайте DVD и диски Blu-ray.</p>
             </div>
             <div class="offers__offer">
-              <span class="offers__price">1990 руб.</span>
-              <button class="offers__button">В корзину!</button>
+              <span class="offers__price-container"><span class="offers__price">1990</span> руб.</span>
+              <button class="offers__button-add-basket">В корзину!</button>
             </div>
           </li>
 
@@ -61,8 +61,8 @@
               </p>
             </div>
             <div class="offers__offer">
-              <span class="offers__price">1890 руб.</span>
-              <button class="offers__button">В корзину!</button>
+              <span class="offers__price-container"><span class="offers__price">1890</span> руб.</span>
+              <button class="offers__button-add-basket">В корзину!</button>
             </div>
           </li>
 
@@ -82,8 +82,8 @@
 
             </div>
             <div class="offers__offer">
-              <span class="offers__price">990 руб.</span>
-              <button class="offers__button">В корзину!</button>
+              <span class="offers__price-container"><span class="offers__price">990</span> руб.</span>
+              <button class="offers__button-add-basket">В корзину!</button>
             </div>
           </li>
 
@@ -105,8 +105,8 @@
 
             </div>
             <div class="offers__offer">
-              <span class="offers__price">490 руб.</span>
-              <button class="offers__button">В корзину!</button>
+              <span class="offers__price-container"><span class="offers__price">490</span> руб.</span>
+              <button class="offers__button-add-basket">В корзину!</button>
             </div>
           </li>
 
@@ -124,8 +124,8 @@
                 форматы и для мобильных устройств.</p>
             </div>
             <div class="offers__offer">
-              <span class="offers__price">1490 руб.</span>
-              <button class="offers__button">В корзину!</button>
+              <span class="offers__price-container"><span class="offers__price">1490</span> руб.</span>
+              <button class="offers__button-add-basket">В корзину!</button>
             </div>
           </li>
 
@@ -136,7 +136,7 @@
           <ul class="basket__list">
             <li class="basket__item basket__item--empty"><span>Ваша корзина пуста</span></li>
           </ul>
-          <p class="basket__total">Всего: <span class="basket__value">0 руб.</span></p>
+          <p class="basket__total">Всего: <span class="basket__value">0</span> руб.</p>
           <button class="basket__button">Оформить заказ</button>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <a class="basket__button-remove" tabindex="0">
           <svg class="basket__button-icon" fill="#F78F8F" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="button-close" x="0px" y="0px"
-            viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve" width="80" height="80">
+            viewBox="0 0 80 80" style="enable-background: new 0 0 80 80;" xml:space="preserve" width="80" height="80">
             <g>
               <polygon
                 points="40,49.007 15.714,73.293 6.707,64.286 30.993,40 6.707,15.714 15.714,6.707 40,30.993    64.286,6.707 73.293,15.714 49.007,40 73.293,64.286 64.286,73.293  " />
@@ -162,12 +162,14 @@
             </g>
           </svg>
         </a>
-        <span class="basket__offer-title">Пакет Видеопрограмм</span>
+        <span class="basket__offer-title"></span>
       </div>
 
-      <span class="basket__offer-price">1990 руб.</span>
+      <span class="basket__offer-price"></span>
     </li>
   </template>
+
+  <script src="js/offer.js"></script>
 </body>
 
 </html>
