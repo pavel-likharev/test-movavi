@@ -72,6 +72,7 @@
           break
         }
       };
+      
       listBasket.removeChild(generatedElem);
       getTotalPrice(offer, false);
 
