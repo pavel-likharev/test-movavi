@@ -6,6 +6,9 @@
   flex-direction: column;
   align-self: flex-start;
   padding: 15px;
+  margin-top: 35px;
+
+  font-weight: bold;
 
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -13,7 +16,8 @@
 
 .basket__title {
   position: relative;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 25px;
   padding: 24px 0;
   padding-left: 108px;
 
@@ -36,13 +40,17 @@
 
 .basket__list {
   .list-reset();
+  width: 200px;
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid @border-color;
 }
 
 .basket__item {
   display: flex;
   justify-content: space-between;
   width: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 
   &--empty {
     display: inline-block;
@@ -56,11 +64,11 @@
 
 .basket__button-remove {
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   vertical-align: top;
 
-  margin-right: 7px;
+  margin-right: 3px;
 
   &:hover .basket__button-icon,
   &:focus .basket__button-icon {
@@ -73,8 +81,8 @@
 }
 
 .basket__button-icon {
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   fill: grey;
 
   cursor: pointer;
@@ -83,17 +91,18 @@
 .basket__offer-title {
   display: inline-block;
   width: 105px;
-}
-
-.basket__offer-price,
-.basket__value {
-  font-weight: bold;
+  line-height: 15px;
 }
 
 .basket__total {
+  width: 200px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 28px;
   text-align: right;
 }
 
 .basket__button {
   .button(@green, 18px, #00ab1d);
+  padding: 10px;
 }
